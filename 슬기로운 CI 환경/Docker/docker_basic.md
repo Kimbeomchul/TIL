@@ -24,18 +24,17 @@
 
 ### 도커 생명주기
 - 생성(create) -> 시작(start) -> 실행(running) -> 중지(stopped) -> 삭제(deleted)
-
   + docker create <이미지 이름> // 생성
   + docker start -a <컨테이너 아이디/이름> // 시작 (-a는 attach 화면에 표출해주는 효과)
   + docker stop || docker kill // Stop은 정리할 시간을 주고나서 중지, kill은 바로중지 
   + docker rm <아이디/이름> // 삭제
+  
 - 모든 컨테이너를 삭제하고 싶을때!
   + docker rm `docker ps -a -q`  <작은 따옴표가아닌 백틱을 이용해야한다 (키보드 1옆에있는것!)>
 - 이미지를 삭제하고싶을때 
   + docker rmi <이미지 id>
 - 도커의 컨테이너, 이미지 , 네트워크를 모두 삭제하고싶을땐
   + docker system prune (실행중인 것에는 효과x)
-
 - 실행중인 컨테이너에 명령어 전달 
   + docker exec <컨테이너 아이디> <명령어>
 
@@ -55,6 +54,8 @@
   + -t 는 tag~ 
   
 
+- 이미지가 생성되는 순서
+![image](https://user-images.githubusercontent.com/54543148/123268887-6a683b00-d539-11eb-92b6-e01b1017ddc0.png)
 
 
 
