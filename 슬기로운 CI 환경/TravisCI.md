@@ -19,3 +19,6 @@
 - before_install: => 스크립트를 실행할 수 있는환경을 구성
 - script: => 실행할 스크립트
 - after_success: => 테스트 성공 후 할일 
+
+### yml파일 팁
+- yml파일 잘못작성시 CI환경에서 Could not parse 에러가 발생한다. 이를 예방하기위해 [링크](http://www.yamllint.com/)와 같은 yaml파일 유효성을 체크해주는 사이트가 존재한다.
