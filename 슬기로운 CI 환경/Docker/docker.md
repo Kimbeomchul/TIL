@@ -38,4 +38,11 @@
     * 이미지를 빌드할때 참조해야할 도커파일을 지정해준다. 
 
 
+### 클라욷드 환경에서 Dockerfile 여러개를 빌드 ( Ex: AWS, GCP )
+- ex ) AWS ElasticBeanstalk
+  + Dockerrun.aws.json 파일 생성
+    * 해당 파일을 통해 ElasticBeanstalk이 다중컨테이너를 어떻게 작동시킬지 알려줌.
+      * 컨테이너를 명시하며 , Task에다가 어떻게 컨테이너를 실행할지 정의해준다. ( Task Definition 작업정의 ) 해당 작업정의는 도커데몬으로 이동되며 수행됨.
 
+      
+    
