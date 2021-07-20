@@ -7,3 +7,11 @@
 ### 예제
 - 웹 스크래핑 깃
 [예제](https://github.com/Kimbeomchul/node_scraping)
+
+
+### Python
+- Beautiful Soup 
+  + 빠르게 크롤링이 가능하다. 하지만 스스로 웹 사이트를 크롤링 할 수 없어, urlib2 와 requests로 HTML가 필요하다. 
+- Scrapy
+  + Beautiful Soup 에서는 지원하지 않는 XPath를 Scrapy에서는 사용할 수 있다. XPath 를 사용함으로써 복잡한 HTML소스를 쉽게 크롤링 할 수 있게 한당
+[-준비중-]()
